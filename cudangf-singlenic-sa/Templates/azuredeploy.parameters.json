@@ -1,0 +1,26 @@
+﻿{
+    "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+
+        "NICIP": { "value": "" },
+        "NICName": { "value": "" },
+        "subnetName": { "value": "" },
+        "subnetRange": { "value": "" },
+        "loadBalancerPublicIPName": { "value": "" },
+        "loadBalancerPublicDNSName": { "value": "" },
+        "loadBalancerName": { "value": "" },
+        "location": { "value": "" },
+        "ngAvailabilitySetName": { "value": "" },
+        "storageAccountName": { "value": "" },
+        "vNETAddressPrefix": { "value": "" },
+        "vNETName": { "value": "" },
+        "NGName": { "value": "" },
+        "vmsize": { "value": "" },
+        "license": { "value": "" },
+        "vNetResourceGroup": { "value":  ""},
+        "adminPassword": {
+            "value": ""
+        }
+    }
+}

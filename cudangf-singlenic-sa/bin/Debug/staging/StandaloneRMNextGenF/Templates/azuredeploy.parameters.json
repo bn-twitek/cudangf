@@ -1,0 +1,26 @@
+﻿{
+    "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+
+        "NICIP": { "value": "10.5.0.25" },
+        "NICName": { "value": "NGNICEUS" },
+        "subnetName": { "value": "Firewall" },
+        "subnetRange": { "value": "10.5.0.0/24" },
+        "loadBalancerPublicIPName": { "value": "nglbtestip" },
+        "loadBalancerPublicDNSName": { "value": "nglbtestip" },
+        "loadBalancerName": { "value": "nglbplpstatic" },
+        "location": { "value": "East US" },
+        "ngAvailabilitySetName": { "value": "NGWEStaticav" },
+        "storageAccountName": { "value": "gausstorage" },
+        "vNETAddressPrefix": { "value": "10.5.0.0/16" },
+        "vNETName": { "value": "GAEUSVNET" },
+        "NGName": { "value": "NGWEStatic" },
+        "vmsize": { "value": "Standard_A1" },
+        "license": { "value": "hourly" },
+        "vNetResourceGroup": { "value":  "StandaloneRMNextGenF"},
+        "adminPassword": {
+            "value": "Password12"
+        }
+    }
+}
