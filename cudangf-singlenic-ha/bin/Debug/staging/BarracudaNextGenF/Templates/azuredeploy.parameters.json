@@ -1,0 +1,70 @@
+﻿{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+                "location": {
+            "value": "East US",
+            "metadata": {
+                "description": "The datacenter in which the resources should be built"
+            }
+        },
+        "storageAccountName": {
+            "value": "gaeusstorage",
+            "metadata": {
+                "description": "The datacenter in which the resources should be built"
+            }
+        },
+        "vmName": {
+            "value": "GA-EUS-NG",
+            "metadata": {
+                "description": "The name of the WAF vm, it will be appended with a numerical identfier"
+            }
+        },
+        "dnsNameForLBIP": {
+            "value": "ga-eus-ng",
+            "metadata": {
+                "description": "The dnsName which the external load balancer should use in which the resources should be built"
+            }
+        },
+        "vNetResourceGroup": {
+            "value": "StandaloneRMNextGenF",
+            "metadata": {
+                "description": "The name of the vNETs resource group"
+            }
+        },
+        "vNETName": {
+            "value": "GAEUSVNET",
+            "metadata": {
+                "description": "The vNET name in which the WAF should be built"
+            }
+        },
+        "subnetName": {
+            "value": "Firewall",
+            "metadata": {
+                "description": "The vNET name in which the WAF should be built"
+            }
+        },
+       
+        "license": {
+            "value": "byol",
+            "metadata": {
+                "description": "The license type can be byol or payg. Choosing byol means a evaluation license can be applied for to allow you to test"
+            }
+        },
+        "vmSize": {
+            "value": "Standard_A1",
+            "metadata": {
+                "description": "The number of WAF machines that should be built"
+            }
+        },
+        "subnetMask": {
+            "value": "10.5.0.0/25"
+        },
+        "adminPassword": {
+            "value": "Password12"
+        },
+        "subnetGatewayIP": {
+            "value": "10.5.0.1/25"
+        }
+    }
+}
